@@ -20,17 +20,23 @@
       <import plugin="ac.soton.xeventb.xcontext"/>
       <import plugin="org.eventb.emf.core"/>
       <import plugin="org.junit" version="4.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.junit4" version="2.12.0" match="compatible"/>
+      <import plugin="org.eclipse.xtext.xbase.junit" version="2.12.0" match="compatible"/>
+      <import plugin="org.eclipse.xtext.xbase.lib" version="2.12.0" match="compatible"/>
+      <import plugin="org.eclipse.xtext.testing" version="2.12.0" match="compatible"/>
+      <import plugin="org.eclipse.xtext.xbase.testing" version="2.12.0" match="compatible"/>
       <import plugin="org.hamcrest.core"/>
       <import plugin="ac.soton.xeventb.xcontext.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="ac.soton.xeventb.xmachine"/>
       <import plugin="org.junit" version="4.12.0" match="greaterOrEqual"/>
       <import plugin="ac.soton.xeventb.xmachine.ui"/>
-      <import plugin="org.eclipse.xtext.junit4" version="2.10.0"/>
-      <import plugin="org.eclipse.xtext.xbase.junit" version="2.10.0"/>
-      <import plugin="org.eclipse.xtext.xbase.lib" version="2.10.0"/>
-      <import plugin="org.eclipse.xtext.testing" version="2.10.0"/>
-      <import plugin="org.eclipse.xtext.xbase.testing" version="2.10.0"/>
+      <import plugin="com.google.guava"/>
+      <import plugin="org.eclipse.xtend.lib"/>
+      <import plugin="org.eclipse.xtend.lib.macro"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.12.0" match="greaterOrEqual"/>
+      <import plugin="org.eventb.emf.core" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="ac.soton.xeventb.tests.common" version="0.0.1" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -56,6 +62,13 @@
 
    <plugin
          id="ac.soton.xeventb.xmachine.ui.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ac.soton.xeventb.tests.common"
          download-size="0"
          install-size="0"
          version="0.0.0"
