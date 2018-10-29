@@ -106,7 +106,7 @@ class XTextConvertHandler extends AbstractHandler implements IHandler {
 		var EventBElement mch = emfRodinDB.loadEventBComponent(root)
 		var String uriString = EcoreUtil::getURI(mch).toString()
 		uriString = uriString.substring(0, uriString.lastIndexOf("bum"))
-		uriString = '''«uriString»bumx'''.toString
+		uriString = '''«uriString»buf'''.toString
 		var URI uri = URI::createURI(uriString)
 		emfRodinDB.saveResource(uri, mch)
 	}
@@ -122,7 +122,7 @@ class XTextConvertHandler extends AbstractHandler implements IHandler {
 		var EventBElement ctx = emfRodinDB.loadEventBComponent(root)
 		var String uriString = EcoreUtil::getURI(ctx).toString()
 		uriString = uriString.substring(0, uriString.lastIndexOf("buc"))
-		uriString = '''«uriString»bucx'''.toString
+		uriString = '''«uriString»buf'''.toString
 		var URI uri = URI::createURI(uriString)
 		emfRodinDB.saveResource(uri, ctx)
 	}

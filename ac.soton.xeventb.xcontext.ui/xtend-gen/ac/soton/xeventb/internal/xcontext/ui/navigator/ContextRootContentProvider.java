@@ -10,10 +10,9 @@
  */
 package ac.soton.xeventb.internal.xcontext.ui.navigator;
 
-import ac.soton.xeventb.ui.AbstractRootContentProvider;
 import org.eclipse.jface.viewers.ITreeContentProvider;
+import org.eventb.core.IContextRoot;
 import org.eventb.core.IEventBProject;
-import org.rodinp.core.IInternalElement;
 
 /**
  * A specific sub-class for context root content provider. This provide
@@ -24,9 +23,9 @@ import org.rodinp.core.IInternalElement;
  * @since 1.0
  */
 @SuppressWarnings("all")
-public final class ContextRootContentProvider extends AbstractRootContentProvider implements ITreeContentProvider {
+public final class ContextRootContentProvider implements /* AbstractRootContentProvider */ITreeContentProvider {
   @Override
-  public IInternalElement getRoot(final IEventBProject project, final String name) {
+  public IContextRoot getRoot(final IEventBProject project, final String name) {
     return project.getContextRoot(name);
   }
 }

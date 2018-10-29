@@ -16,11 +16,8 @@ import org.eventb.emf.core.AbstractExtension;
 import org.eventb.emf.core.machine.Action;
 import org.eventb.emf.core.machine.Event;
 import org.eventb.emf.core.machine.Guard;
-import org.eventb.emf.core.machine.Invariant;
 import org.eventb.emf.core.machine.Machine;
 import org.eventb.emf.core.machine.Parameter;
-import org.eventb.emf.core.machine.Variable;
-import org.eventb.emf.core.machine.Variant;
 import org.eventb.emf.core.machine.Witness;
 
 @SuppressWarnings("all")
@@ -30,23 +27,9 @@ public class EventBComponentFormatter extends AbstractFormatter2 {
   private EventBComponentGrammarAccess _eventBComponentGrammarAccess;
   
   protected void _format(final Machine machine, @Extension final IFormattableDocument document) {
-    EList<AbstractExtension> _extensions = machine.getExtensions();
-    for (final AbstractExtension abstractExtension : _extensions) {
-      document.<AbstractExtension>format(abstractExtension);
-    }
-    EList<Variable> _variables = machine.getVariables();
-    for (final Variable variable : _variables) {
-      document.<Variable>format(variable);
-    }
-    EList<Invariant> _invariants = machine.getInvariants();
-    for (final Invariant invariant : _invariants) {
-      document.<Invariant>format(invariant);
-    }
-    document.<Variant>format(machine.getVariant());
-    EList<Event> _events = machine.getEvents();
-    for (final Event event : _events) {
-      document.<Event>format(event);
-    }
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field variant is undefined for the type Machine"
+      + "\nformat cannot be resolved");
   }
   
   protected void _format(final Event event, @Extension final IFormattableDocument document) {

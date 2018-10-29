@@ -127,7 +127,7 @@ public class XTextConvertHandler extends AbstractHandler implements IHandler {
     uriString = uriString.substring(0, uriString.lastIndexOf("bum"));
     StringConcatenation _builder = new StringConcatenation();
     _builder.append(uriString);
-    _builder.append("bumx");
+    _builder.append("buf");
     uriString = _builder.toString();
     URI uri = URI.createURI(uriString);
     emfRodinDB.saveResource(uri, mch);
@@ -146,7 +146,7 @@ public class XTextConvertHandler extends AbstractHandler implements IHandler {
     uriString = uriString.substring(0, uriString.lastIndexOf("buc"));
     StringConcatenation _builder = new StringConcatenation();
     _builder.append(uriString);
-    _builder.append("bucx");
+    _builder.append("buf");
     uriString = _builder.toString();
     URI uri = URI.createURI(uriString);
     emfRodinDB.saveResource(uri, ctx);
